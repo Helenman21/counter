@@ -1,38 +1,71 @@
+body {
+	box-sizing: border-box;
+
+}
+
 .App {
-  text-align: center;
+	margin: 50px;
+	display: flex;
+	justify-content: end;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button-disabled {
+	opacity: 0.5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App__block-section {
+	text-align: center;
+	margin: 0 auto;
+	width: 300px;
+	height: 300px;
+	align-items: center;
+	border: 2px solid black;
+	padding: 15px;
+	background-color: rgb(230, 175, 208);
+	border-radius: 15px;
+	font-size: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.fontColorRed {
+	color: red;
+	font-size: 30px;
+}
+.input-error {
+	color: red;
+	border: 1px solid red;
+} 
+
+.App__block-button {
+	padding: 3px;
+	margin: 20px;
+	border: 1px solid black;
+	background-color: rgb(234, 220, 228);
+	border-radius: 5px;
+	
+}
+.block-border-reusable {
+	height: 100%;
+	width: 100%;
+	border-radius: 15px;
+}
+.block-border-reusable-for-tablo {
+	border: 2px solid black;
+	height: 70%;
+	width: 100%;
+	border-radius: 15px;
+	margin-bottom: 8px;
 }
 
-.App-link {
-  color: #61dafb;
+.block-border-reusable-for-buttons {
+	border: 2px solid black;
+	height: 25%;
+	width: 100%;
+	border-radius: 15px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tablo-input {
+	display: flex;
+	margin: 5px;
+}
+.tablo-input span {
+	margin-right: 5px;
 }
